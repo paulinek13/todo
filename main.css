@@ -1,0 +1,248 @@
+*{ min-width: min-content; }
+
+body{
+    background-color: #fdfdfd;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	overflow-wrap: break-word;
+	margin-bottom: 64px;
+}
+
+main{
+	padding: 16px;
+}
+
+#tasks-list{
+	list-style-type: none;
+	padding: 0;
+	margin: auto;
+}
+
+.task-div{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-direction: row;
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+	flex-wrap: wrap;
+}
+
+.task-lvl{
+	margin-left: 12px;
+	background-color: red;
+	padding: 2px 6px;
+	border-radius: 2px;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 500;
+}
+
+.task-lvl-0 .task-name{
+	font-weight: 500;
+}
+
+.task-lvl-0{ border-bottom: 1px solid #ff0000; }
+.task-lvl-0 .task-lvl, #priority-0-label{
+	background-color: #ff0000;
+	color: white;
+	font-size: 1.1em;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 900;
+}
+.task-lvl-1{ border-bottom: 1px solid #ff5d00; }
+.task-lvl-1 .task-lvl, #priority-1-label{
+    background-color: #ff5d00;
+	font-weight: 900;
+}
+.task-lvl-2{ border-bottom: 1px solid #ffc500; }
+.task-lvl-2 .task-lvl, #priority-2-label{
+    background-color: #ffc500;
+}
+.task-lvl-3{ border-bottom: 1px solid #aef300; }
+.task-lvl-3 .task-lvl, #priority-3-label{
+    background-color: #aef300;
+}
+.task-lvl-4{ border-bottom: 1px solid #c6c6c6; }
+.task-lvl-4 .task-lvl, #priority-4-label{
+	background-color:#c6c6c6;
+}
+
+.task-name{
+	flex: 1;
+    overflow-wrap: break-word;
+	margin-left: 4px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.task-div button{
+	margin: 4px;
+	border: none;
+	margin-left: 4px;
+	cursor: pointer;
+	font-size: inherit;
+}
+
+.task-div button:hover{
+	opacity: 0.8;
+}
+
+/* .task-edit-button{
+	background-color: #fefefe;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px !important;
+	font-size: smaller !important;
+	display: none;
+} */
+
+.task-delete-button{
+	color: #de372b;
+	background-color: inherit;
+	border: none;
+}
+
+#add-new-task-button{
+	position: fixed;
+    bottom: 0;
+	width: 100%;
+	display: block;
+	margin: auto;
+	border: none;
+	background-color: #000000;
+	color: #f6f6f6;
+	padding: 6px 0;
+	font-size: larger;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 900;
+	cursor: pointer;
+	height: 64px;
+}
+
+#add-new-task-dialog{
+	border: none;
+	outline: none;
+	background: transparent;
+	width: 100%;
+}
+#add-new-task-dialog:focus{ outline: none !important; }
+#add-new-task-dialog *{
+	border-radius: 0;
+	outline: none;
+	border: none;
+}
+
+#add-new-task-dialog::backdrop{
+	background-color: #f5f5f5;
+	backdrop-filter: blur(1px);
+	-webkit-backdrop-filter: blur(1px);
+}
+
+#add-new-task-dialog form{
+    display: flex;
+    justify-content: space-evenly;  
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    align-content: stretch;
+    gap: 12px;
+}
+
+#add-new-task-dialog form label{
+	color: #000000;
+	text-transform: uppercase;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+#priority-0-label{
+	color: white !important;
+	font-weight: 900;
+	font-size: 1.2em;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+	min-width: min-content;
+}
+
+#priority-labels{
+    display: flex;
+	justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+input[type=text] {
+	background: transparent;
+	border-bottom: 2px solid !important;
+	font-size: 1.6em;
+	font-weight: 900;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+input[type=text]::placeholder{
+	color: #333333;
+}
+
+#submit-new-task-button, #cancel-new-task-button{
+	width: min-content;
+	margin: auto;
+	padding: 4px 32px;
+	font-size: 32px;
+	outline: 1px solid;
+	margin-top: 12px;
+	cursor: pointer;
+}
+
+#submit-new-task-button:hover, #cancel-new-task-button:hover{
+	opacity: 0.6;
+}
+
+#cancel-new-task-button{
+	font-size: 0.5em;
+	padding: 2px 8px;
+	background-color: #000000;
+	color: #eeeeee;
+}
+
+@media only screen and (min-width: 1024px) {
+	body { font-size: 24px; }
+	main{
+		max-width: 1024px;
+		margin: auto;
+	}
+}
+
+@media only screen and (min-width: 2048px) {
+	body { font-size: 32px; }
+}
+
+@media only screen and (max-width: 320px) {
+	.task-div{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-auto-columns: 1fr;
+		gap: 0px 0px;
+		grid-auto-flow: row;
+		grid-template-areas:
+		  "task-lvl task-lvl task-lvl task-lvl task-edit-button task-delete-button"
+		  "task-name task-name task-name task-name task-name task-name";
+	}
+
+	.task-lvl { grid-area: task-lvl; margin-left: 0; }
+	  
+	.task-edit-button { grid-area: task-edit-button; }
+	  
+	.task-delete-button { grid-area: task-delete-button; }
+	  
+	.task-name { grid-area: task-name; }
+}
+
+*:focus{
+    outline: 1px solid black;
+}
+
+/* *{
+	border: 1px solid red !important;
+} */
