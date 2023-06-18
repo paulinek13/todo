@@ -1,0 +1,32 @@
+{
+  "name": "todo",
+  "short_name": "todo",
+  "description": "todo pwa app by paulinek13",
+  "start_url": "/todo/index.html",
+  "icons": [
+    {
+      "src": "icons/64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffc500",
+  "background_color": "#fdfdfd",
+  "display": "standalone",
+  "orientation": "portrait-primary"
+}

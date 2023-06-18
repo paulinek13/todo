@@ -1,5 +1,14 @@
 import Dexie from "https://unpkg.com/dexie@latest/dist/modern/dexie.mjs";
 
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/todo/service-worker.js", {
+      scope: "/todo/",
+    })
+    .then((reg) => console.log("Service worker registered"))
+    .catch((err) => console.log("Service worker not registered", err));
+}
+
 const db = new Dexie('todo_db');
 const tasksPriorityNames = ["urgent", "high", "normal", "low", "none"];
 
