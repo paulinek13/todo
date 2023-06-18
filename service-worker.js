@@ -1,6 +1,7 @@
 const cache_name = "cache_1.0.0";
 const assets = [
   "/todo/",
+  "https://unpkg.com/dexie@latest/dist/modern/dexie.mjs",
   "/todo/index.html",
   "/todo/main.js",
   "/todo/reset.css",
