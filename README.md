@@ -23,11 +23,12 @@ intuitive web-based app for organizing your tasks
 
 # about
 
-This app uses [Dexie.js](https://github.com/dexie/Dexie.js) (Wrapper for IndexedDB), so the app saves all the data locally.
+This is a PWA app. It uses [Dexie.js](https://github.com/dexie/Dexie.js) (wrapper for indexedDB).
+The app saves all the data locally and works offline once installed.
 
 # roadmap
 
-- [ ] turn it into a PWA app
+- [x] turn it into a PWA app
 - [ ] add a way to sort tasks by different things
 - [ ] dark mode
 
