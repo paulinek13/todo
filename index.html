@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./icons/64.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main.css">
-    <title>todo</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./icons/64.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+  <title>todo</title>
+
 </head>
+
 <body>
-    <main>
-      <ul id="tasks-list"></ul>
-    </main>
+  <main>
+    <ul id="tasks-list"></ul>
+  </main>
 
-    <dialog id="add-new-task-dialog">
-      <form method="dialog" id="new-task-form">
-        <div id="priority-labels">
-          <label id="priority-0-label" for="0-priority">
-            <input type="radio" id="0-priority" name="task_priority" value="0" required>
-            urgent</label>
-          <label id="priority-1-label" for="1-priority">
-            <input type="radio" id="1-priority" name="task_priority" value="1">
-            high</label>
-          <label id="priority-2-label" for="2-priority">
-            <input checked type="radio" id="2-priority" name="task_priority" value="2">
-            normal</label>
-          <label id="priority-3-label" for="3-priority">
-            <input type="radio" id="3-priority" name="task_priority" value="3">
-            low</label>
-          <label id="priority-4-label" for="4-priority">
-            <input type="radio" id="4-priority" name="task_priority" value="4">
-            none</label>
-        </div>
+  <dialog id="add-new-task-dialog">
+    <form method="dialog" id="new-task-form">
+      <div id="priority-labels">
+        <label id="priority-0-label" for="0-priority">
+          <input type="radio" id="0-priority" name="task_priority" value="0" required>
+          urgent</label>
+        <label id="priority-1-label" for="1-priority">
+          <input type="radio" id="1-priority" name="task_priority" value="1">
+          high</label>
+        <label id="priority-2-label" for="2-priority">
+          <input checked type="radio" id="2-priority" name="task_priority" value="2">
+          normal</label>
+        <label id="priority-3-label" for="3-priority">
+          <input type="radio" id="3-priority" name="task_priority" value="3">
+          low</label>
+        <label id="priority-4-label" for="4-priority">
+          <input type="radio" id="4-priority" name="task_priority" value="4">
+          none</label>
+      </div>
 
-        <input type="text" name="name" id="name" placeholder="task" required>
-        
-        <button type="submit" id="submit-new-task-button">+</button>
-        <button id="cancel-new-task-button">cancel</button>
-      </form>
-    </dialog>
+      <input type="text" name="name" id="name" placeholder="task" required>
 
-    <button id="add-new-task-button">+</button>
+      <button type="submit" id="submit-new-task-button">+</button>
+      <button id="cancel-new-task-button">cancel</button>
+    </form>
+  </dialog>
 
-    <script type="module" src="main.js"></script>
+  <button id="add-new-task-button">+</button>
+
+  <script type="module" src="main.js"></script>
 </body>
+
 </html>
