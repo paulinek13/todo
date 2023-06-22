@@ -8,12 +8,14 @@
 <p align="center">
 intuitive web-based app for organizing your tasks
 <br />
-<a href="https://paulinek13.github.io/todo/"><strong>paulinek13.github.io/todo »</strong></a>
+<a href="https://paulinek13.github.io/todo/"><strong>paulinek13.github.io/todo</strong></a>
 <br />
 <br />
 <a href="https://github.com/paulinek13/todo/issues">request feature · report issue</a>
 <br />
 <a href="#about">about</a> ·
+<a href="#about">features</a> ·
+<a href="#about">technologies</a> ·
 <a href="#roadmap">roadmap</a> ·
 <a href="#contributing">contributing</a>
 <br />
@@ -21,18 +23,27 @@ intuitive web-based app for organizing your tasks
 <img src="./screenshot.png" alt="Logo" width="256">
 </p>
 
-# about
+# About
 
-This is a PWA app. It uses [Dexie.js](https://github.com/dexie/Dexie.js) (wrapper for indexedDB).
-The app saves all the data locally and works offline once installed.
+User-friendly and useful PWA **_todo_** app. Designed with mobile devices in mind. Works offline once installed. Saves all the data locally (indexedDB).
 
-# roadmap
+# Features
 
-- [x] turn it into a PWA app
+- adding a task and its priority
+- deleting a task
+- listing tasks by priority (from highest to lowest)
+
+# Technologies
+
+- Vanilla JS
+- [Dexie.js](https://github.com/dexie/Dexie.js)
+
+# Roadmap
+
 - [ ] add a way to sort tasks by different things
 - [ ] dark mode
 
-# contributing
+# Contributing
 
 Pull requests are welcome. _Any_ feedback is welcome as well.
 For major changes, please open an issue first to discuss what you would like to change.
