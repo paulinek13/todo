@@ -14,8 +14,8 @@ intuitive web-based app for organizing your tasks
 <a href="https://github.com/paulinek13/todo/issues">request feature · report issue</a>
 <br />
 <a href="#about">about</a> ·
-<a href="#about">features</a> ·
-<a href="#about">technologies</a> ·
+<a href="#features">features</a> ·
+<a href="#technologies">technologies</a> ·
 <a href="#roadmap">roadmap</a> ·
 <a href="#contributing">contributing</a>
 <br />
